@@ -4,15 +4,13 @@ import useModal4 from "@/app/hooks/useModal4";
 import Modal from "react-modal";
 import { useRouter } from "next/navigation";
 
-// Modal.setAppElement("#modal-3");
-
-export default function SignupModal() {
+export default function LoginModal() {
     const { onClose } = useModal4();
     const router = useRouter();
 
     return (
         <Modal isOpen={true} onRequestClose={onClose} ariaHideApp={false}>
-            <h1 className="">Sign up Modal</h1>
+            <h1 className="">Login Modal</h1>
             <div className="mt-4">
                 <button
                     type="button"

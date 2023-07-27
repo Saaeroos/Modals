@@ -4,8 +4,6 @@ import useModal3 from "@/app/hooks/useModal3";
 import NestedComponentModal3 from "./NestedComponentModal3";
 import Modal from "react-modal";
 
-// Modal.setAppElement("#modal-3");
-
 export default function Modal3() {
     const { isOpen, onClose } = useModal3();
 
