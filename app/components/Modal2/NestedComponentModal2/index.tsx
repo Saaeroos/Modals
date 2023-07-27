@@ -1,5 +1,5 @@
-import useModal1 from "@/app/modals/useModal1";
-import useModal2 from "@/app/modals/useModal2";
+import useModal1 from "@/app/hooks/useModal1";
+import useModal2 from "@/app/hooks/useModal2";
 
 export default function NestedComponent() {
     const { onOpen: openModal1 } = useModal1();

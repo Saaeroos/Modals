@@ -1,5 +1,5 @@
-import useModal3 from "@/app/modals/useModal3";
-import useModal4 from "@/app/modals/useModal4";
+import useModal3 from "@/app/hooks/useModal3";
+import useModal4 from "@/app/hooks/useModal4";
 
 export default function NestedComponent() {
     const { onClose: onCloseModal4 } = useModal4();

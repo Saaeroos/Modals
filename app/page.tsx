@@ -4,10 +4,10 @@ import Modal1 from "./components/Modal1";
 import Modal2 from "./components/Modal2";
 import Modal3 from "./components/Modal3";
 import Modal4 from "./components/Modal4";
-import useModal1 from "./modals/useModal1";
-import useModal2 from "./modals/useModal2";
-import useModal3 from "./modals/useModal3";
-import useModal4 from "./modals/useModal4";
+import useModal1 from "./hooks/useModal1";
+import useModal2 from "./hooks/useModal2";
+import useModal3 from "./hooks/useModal3";
+import useModal4 from "./hooks/useModal4";
 
 export default function Home() {
     const { onOpen: openModal1 } = useModal1();

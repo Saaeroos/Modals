@@ -1,8 +1,8 @@
 "use client";
 
-import useModal2 from "@/app/modals/useModal2";
+import useModal2 from "@/app/hooks/useModal2";
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, MouseEvent } from "react";
+import { Fragment } from "react";
 import NestedComponent from "./NestedComponentModal2";
 
 export default function Modal2() {

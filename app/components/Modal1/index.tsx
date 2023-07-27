@@ -1,19 +1,11 @@
 "use client";
 
-import useModal1 from "@/app/modals/useModal1";
+import useModal1 from "@/app/hooks/useModal1";
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, MouseEventHandler } from "react";
+import { Fragment } from "react";
 
 export default function Modal1() {
-    const { isOpen, toggleModal: toggleModal1 } = useModal1();
-
-    //the handleClose function uses setTimeout to delay the closing of Modal2 by a very small amount of time (0 milliseconds).
-    //This will allow the React component lifecycle to properly process the closure of Modal2 without affecting Modal1.
-    const handleClose = () => {
-        setTimeout(() => {
-            toggleModal1();
-        }, 100);
-    };
+    const { isOpen, onClose } = useModal1();
 
     return (
         <Transition appear show={isOpen} as={Fragment} key={"modal1"}>
@@ -22,8 +14,7 @@ export default function Modal1() {
                 id={"modal1"}
                 as="div"
                 className="relative z-10"
-                // onClose={onClose}
-                onClose={handleClose}
+                onClose={onClose}
             >
                 <Transition.Child
                     as={Fragment}
@@ -60,10 +51,7 @@ export default function Modal1() {
                                     <button
                                         type="button"
                                         className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                                        onClick={(e) => {
-                                            e.stopPropagation();
-                                            handleClose();
-                                        }}
+                                        onClick={onClose}
                                     >
                                         Got it, thanks!
                                     </button>
