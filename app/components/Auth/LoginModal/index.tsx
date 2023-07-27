@@ -1,11 +1,11 @@
 "use client";
 
-import useModal4 from "@/app/hooks/useModal4";
 import Modal from "react-modal";
 import { useRouter } from "next/navigation";
+import useLoginModal from "@/app/hooks/modals/useLoginModal";
 
 export default function LoginModal() {
-    const { onClose } = useModal4();
+    const { onClose } = useLoginModal();
     const router = useRouter();
 
     return (

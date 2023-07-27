@@ -1,6 +1,6 @@
 "use client";
 
-import useModal1 from "@/app/hooks/useModal1";
+import useModal1 from "@/app/hooks/modals/useModal1";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 

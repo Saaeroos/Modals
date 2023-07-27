@@ -1,6 +1,6 @@
 "use client";
 
-import useModal4 from "@/app/hooks/useModal4";
+import useModal4 from "@/app/hooks/modals/useModal4";
 import NestedComponentModal4 from "./NestedComponentModal4";
 import Modal from "react-modal";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import useModal2 from "@/app/hooks/useModal2";
+import useModal2 from "@/app/hooks/modals/useModal2";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import NestedComponent from "./NestedComponentModal2";
