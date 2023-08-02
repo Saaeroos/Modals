@@ -9,7 +9,7 @@ export default function Modal4() {
 
     return (
         <Modal isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
-            <h1 className="">Modal 4</h1>
+            <h1>Modal 4</h1>
             <NestedComponentModal4 />
             <div className="mt-4">
                 <button

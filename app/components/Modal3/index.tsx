@@ -8,7 +8,7 @@ export default function Modal3() {
     const { isOpen, onClose } = useModal3();
 
     return (
-        <div className="z-20">
+        <div className="z-50">
             <Modal isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
                 <h1 className="">Modal 3</h1>
                 <NestedComponentModal3 />
