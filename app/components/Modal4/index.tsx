@@ -8,7 +8,12 @@ export default function Modal4() {
     const { isOpen, onClose } = useModal4();
 
     return (
-        <Modal isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
+        <Modal
+            isOpen={isOpen}
+            onRequestClose={onClose}
+            ariaHideApp={false}
+            style={{ overlay: { zIndex: 5 } }}
+        >
             <h1>Modal 4</h1>
             <NestedComponentModal4 />
             <div className="mt-4">

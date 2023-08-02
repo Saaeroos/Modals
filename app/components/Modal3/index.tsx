@@ -9,7 +9,12 @@ export default function Modal3() {
 
     return (
         <div className="z-50">
-            <Modal isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
+            <Modal
+                isOpen={isOpen}
+                onRequestClose={onClose}
+                ariaHideApp={false}
+                style={{ overlay: { zIndex: 6 } }}
+            >
                 <h1 className="">Modal 3</h1>
                 <NestedComponentModal3 />
                 <div className="mt-4">
