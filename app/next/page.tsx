@@ -4,7 +4,7 @@ export default function Page() {
     return (
         <div className="mt-5">
             <Link
-                href="/next/login"
+                href="next/login"
                 className="bg-black text-white mr-2 p-2 rounded-md h-10"
             >
                 Login

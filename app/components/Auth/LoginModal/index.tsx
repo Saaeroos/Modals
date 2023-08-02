@@ -5,11 +5,11 @@ import { useRouter } from "next/navigation";
 import useLoginModal from "@/app/hooks/modals/useLoginModal";
 
 export default function LoginModal() {
-    const { onClose } = useLoginModal();
+    const { isOpen, onClose } = useLoginModal();
     const router = useRouter();
 
     return (
-        <Modal isOpen={true} onRequestClose={onClose} ariaHideApp={false}>
+        <Modal isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
             <h1 className="">Login Modal</h1>
             <div className="mt-4">
                 <button

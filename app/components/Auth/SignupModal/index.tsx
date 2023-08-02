@@ -5,11 +5,11 @@ import { useRouter } from "next/navigation";
 import useSignupModal from "@/app/hooks/modals/useSignupModal";
 
 export default function SignupModal() {
-    const { onClose } = useSignupModal();
+    const { isOpen, onClose } = useSignupModal();
     const router = useRouter();
 
     return (
-        <Modal isOpen={true} onRequestClose={onClose} ariaHideApp={false}>
+        <Modal isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
             <h1 className="">Sign up Modal</h1>
             <div className="mt-4">
                 <button
